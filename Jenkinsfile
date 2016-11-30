@@ -13,6 +13,7 @@ node {
     sh "npm install"
 
   stage 'testes protractor'
+    sh "webdriver-manager update"
     sh "protractor protractor.conf.js"
 
 }
