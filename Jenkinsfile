@@ -1,8 +1,7 @@
 node {
   
-  stage 'install node'
-    def nodeHome = tool name: 'node-7.0.0', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
-    sh "${nodeHome}/bin/node"
+  def nodeHome = tool name: 'node-7.0.0', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+  env.PATH = "${nodeHome}/bin:${env.PATH}"
   
   stage 'valida ambiente'
     sh "node -v"
