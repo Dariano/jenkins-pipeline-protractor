@@ -4,7 +4,7 @@ exports.config = {
   directConnect: true,
   specs: ['todo-spec.js'],
   capabilities : {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
     'binary': '/usr/bin/google-chrome'
   },
   framework: 'jasmine2'
