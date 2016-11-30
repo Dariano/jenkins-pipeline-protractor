@@ -5,10 +5,7 @@ exports.config = {
   restartBrowserBetweenTests: true,
   specs: ['todo-spec.js'],
   capabilities : {
-   'browserName': 'chrome',
-    "chromeOptions": {
-        binary: "/usr/bin/"
-    }
+   'browserName': 'chrome'
   },
   framework: 'jasmine2'
 };
