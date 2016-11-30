@@ -5,7 +5,7 @@ exports.config = {
   specs: ['todo-spec.js'],
   capabilities : {
     'browserName': 'chrome'
-    'binary': '/usr/bin/'
+    'binary': '/usr/bin/google-chrome'
   },
   framework: 'jasmine2'
 };
