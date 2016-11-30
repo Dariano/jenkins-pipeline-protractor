@@ -5,7 +5,7 @@ exports.config = {
   capabilities : {
    'browserName': 'chrome',
     "chromeOptions": {
-        binary: "/usr/local/share/google-chrome"
+        binary: "/usr/local/share/"
     }
   },
   framework: 'jasmine2'
