@@ -5,6 +5,7 @@ node {
   
   stage 'valida ambiente'
     sh "node -v"
+    sh "java -version"
   
   stage 'baixa projeto'
     checkout scm
