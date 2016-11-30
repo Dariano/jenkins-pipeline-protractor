@@ -5,12 +5,14 @@ node {
   
   stage 'valida ambiente'
     sh "node -v"
-    sh "gulp -v"
   
   stage 'baixa projeto'
     checkout scm
   
-  state 'instala pacotes'
+  stage 'instala pacotes'
     sh "npm install"
+
+  stage 'testes protractor'
+    sh "protractor protractor.conf.js"
 
 }
