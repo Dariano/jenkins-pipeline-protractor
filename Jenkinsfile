@@ -13,6 +13,6 @@ node {
     sh "npm install"
 
   stage 'testes protractor'
-    sh "protractor protractor.conf.js"
+    sh "./node_modules/bin/protractor protractor.conf.js"
 
 }
