@@ -13,6 +13,10 @@ node {
   stage 'instala pacotes'
     sh "npm install"
 
+  stage 'instalando chrome'
+    sh 'sudo apt-get -y install libxpm4 libxrender1 libgtk2.0-0 libnss3 libgconf-2-4'
+    sh 'sudo apt-get -y google-chrome-stable'
+  
   stage 'testes protractor'
     sh "./node_modules/protractor/bin/webdriver-manager update"
     sh "./node_modules/protractor/bin/webdriver-manager start &"
